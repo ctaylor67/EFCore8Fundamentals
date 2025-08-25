@@ -11,7 +11,7 @@ public class PubContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
-          "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = PubDatabase"
+          "Server=localhost;Database=PubIntroDatabase;Trusted_Connection=True;TrustServerCertificate=True;"
         );
     }
 
